@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>StudyBuddy | Resources</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="babyg">
+
+<nav class="nav">
+  <a class="logo" href="index.html">StudyBuddy</a>
+
+  <div class="navlinks">
+    <a href="homepage.html">Home</a>
+    <a href="register-login.html">Login</a>
+    <a href="userprofile.html">Profile</a>
+    <a href="findstudybuddy.html">Find Buddy</a>
+    <a href="progresstracker.html">Progress</a>
+    <a class="active" href="resources.html">Resources</a>
+  </div>
+</nav>
+
+<main class="container page">
+
+  <div class="title">
+    <h1>Study Resources</h1>
+    <p class="tata">
+      Upload, discover, and download notes,
+      practice questions, flashcards, and study guides.
+    </p>
+  </div>
+
+
+  <div class="panel" style="margin-bottom:22px">
+
+    <h2 class="chiikawa">Upload a resource</h2>
+
+    <br>
+
+    <form class="form"
+      onsubmit="event.preventDefault();alert('Resource uploaded!')">
+
+      <input type="file" required>
+
+      <select>
+        <option>Notes</option>
+        <option>Practice Questions</option>
+        <option>Flashcards</option>
+        <option>Study Guide</option>
+      </select>
+
+      <button class="btn" type="submit">
+        Upload Resource
+      </button>
+
+    </form>
+
+  </div>
+
+
+  <div class="grid2">
+
+    <div class="card resource">
+
+      <div class="resource-info">
+
+        <div class="fileicon">📄</div>
+
+        <div>
+          <h3 class="chiikawa">Algebra Revision Notes</h3>
+          <p class="muted">
+            Notes · Uploaded by Alex
+          </p>
+        </div>
+
+      </div>
+
+      <button class="btn"
+        onclick="alert('Downloading Algebra Revision Notes')">
+        Download
+      </button>
+
+    </div>
+
+
+    <div class="card resource">
+
+      <div class="resource-info">
+
+        <div class="fileicon">📝</div>
+
+        <div>
+          <h3 class="chiikawa">Physics Practice Set</h3>
+          <p class="muted">
+            Practice Questions · 25 questions
+          </p>
+        </div>
+
+      </div>
+
+      <button class="btn"
+        onclick="alert('Downloading Physics Practice Set')">
+        Download
+      </button>
+
+    </div>
+
+
+    <div class="card resource">
+
+      <div class="resource-info">
+
+        <div class="fileicon">🃏</div>
+
+        <div>
+          <h3 class="chiikawa">Biology Flashcards</h3>
+          <p class="muted">
+            Flashcards · 40 cards
+          </p>
+        </div>
+
+      </div>
+
+      <button class="btn"
+        onclick="alert('Downloading Biology Flashcards')">
+        Download
+      </button>
+
+    </div>
+
+
+    <div class="card resource">
+
+      <div class="resource-info">
+
+        <div class="fileicon">📚</div>
+
+        <div>
+          <h3 class="chiikawa">English Exam Study Guide</h3>
+          <p class="muted">
+            Study Guide · 12 pages
+          </p>
+        </div>
+
+      </div>
+
+      <button class="btn"
+        onclick="alert('Downloading English Study Guide')">
+        Download
+      </button>
+
+    </div>
+
+  </div>
+
+</main>
+
+<footer>StudyBuddy · Share knowledge, learn together</footer>
+
+</body>
+</html>

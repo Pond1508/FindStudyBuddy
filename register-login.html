@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>StudyBuddy | Register / Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="ya">
+
+<nav class="nav">
+  <a class="logo" href="index.html">StudyBuddy</a>
+
+  <div class="navlinks">
+    <a href="homepage.html">Home</a>
+    <a class="active" href="register-login.html">Login</a>
+    <a href="userprofile.html">Profile</a>
+    <a href="findstudybuddy.html">Find Buddy</a>
+    <a href="progresstracker.html">Progress</a>
+    <a href="resources.html">Resources</a>
+  </div>
+</nav>
+
+<main class="container page">
+
+  <div class="auth panel">
+
+    <h1 style="text-align:center;margin-bottom:20px" class="adaa">
+      Welcome to StudyBuddy
+    </h1>
+
+    <div class="tabs">
+      <button class="chosen">Sign In</button>
+      <button>Create Account</button>
+    </div>
+
+    <form class="form"
+          onsubmit="event.preventDefault();location.href='profile.html'">
+
+      <label>
+        Email
+        <input type="email"
+               placeholder="you@example.com"
+               required>
+      </label>
+
+      <label>
+        Password
+        <input type="password"
+               placeholder="Enter your password"
+               required>
+      </label>
+
+      <button class="btn" type="submit">
+        Sign In
+      </button>
+
+    </form>
+
+    <p class="muted" style="text-align:center;margin-top:18px">
+      New here? Create an account to start finding study buddies.
+    </p>
+
+  </div>
+
+</main>
+
+<footer>StudyBuddy · Your study community</footer>
+
+</body>
+</html>

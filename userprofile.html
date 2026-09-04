@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>StudyBuddy | User Profile</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="choco">
+
+<nav class="nav">
+  <a class="logo" href="index.html">StudyBuddy</a>
+
+  <div class="navlinks">
+    <a href="homepage.html">Home</a>
+    <a href="register-login.html">Login</a>
+    <a class="active" href="userprofile.html">Profile</a>
+    <a href="findstudybuddy.html">Find Buddy</a>
+    <a href="progresstracker.html">Progress</a>
+    <a href="resources.html">Resources</a>
+  </div>
+</nav>
+
+<main class="container page">
+
+  <div class="title">
+    <h1>My Study Profile</h1>
+    <p class="tata">
+      Complete your profile so StudyBuddy can find better matches.
+    </p>
+  </div>
+
+  <div class="panel">
+
+    <form class="form"
+          onsubmit="event.preventDefault();alert('Profile saved!')">
+
+      <label>
+        Full Name
+        <input value="Alex Parker">
+      </label>
+
+      <label>
+        Grade / Year
+        <input value="Grade 9">
+      </label>
+
+      <label>
+        Subjects
+
+        <div class="tags">
+          <span class="tag">Mathematics</span>
+          <span class="tag">Physics</span>
+          <span class="tag">English</span>
+          <span class="tag">History</span>
+        </div>
+
+        <input placeholder="Add another subject">
+      </label>
+
+      <label>
+        Learning Style
+
+        <select>
+          <option>Quiet & focused</option>
+          <option>Discussion based</option>
+          <option>Practice questions</option>
+          <option>Visual learning</option>
+        </select>
+      </label>
+
+      <label>
+        Availability
+        <input value="Weekdays after 4:00 PM">
+      </label>
+
+      <label>
+        Study Goals
+
+        <textarea>
+Prepare for exams, complete homework on time, and improve my understanding of mathematics.
+        </textarea>
+      </label>
+
+      <button class="btn" type="submit">
+        Save Profile
+      </button>
+
+    </form>
+
+  </div>
+
+</main>
+
+<footer>StudyBuddy · Build your perfect study profile</footer>
+
+</body>
+</html>
